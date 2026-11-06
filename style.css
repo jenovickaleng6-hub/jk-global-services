@@ -1,0 +1,403 @@
+
+/* STYLE GÉNÉRAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+/* EN-TÊTE */
+header {
+    background-color: #071b3a;
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f5b400;
+}
+
+/* ACCUEIL */
+#accueil {
+    background-color: #102e59;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#accueil h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+#accueil p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#accueil a {
+    display: inline-block;
+    background-color: #f5b400;
+    color: #071b3a;
+    padding: 14px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 30px;
+    color: #071b3a;
+}
+
+/* SERVICES */
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: white;
+    padding: 30px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* FORMULAIRE */
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #071b3a;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* PIED DE PAGE */
+footer {
+    background-color: #071b3a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* TÉLÉPHONES */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    #accueil h2 {
+        font-size: 28px;
+    }
+}
+
+/* BOUTON WHATSAPP */
+#contact a {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 25px;
+    margin-top: 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#contact a:hover {
+    background-color: #128C7E;
+    transform: scale(1.05);
+}
+
+/* SECTION SERVICES */
+.description-services {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+    color: #666;
+}
+
+.services-container {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 320px;
+    min-height: 190px;
+    padding: 35px 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.service h3 {
+    color: #102e59;
+    margin-bottom: 15px;
+}
+
+.service p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* SECTION A PROPOS */
+.apropos-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.apropos-texte {
+    flex: 1;
+    min-width: 280px;
+}
+
+.apropos-texte h3 {
+    color: #102e59;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.apropos-texte p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.apropos-image {
+    flex: 1;
+    min-width: 280px;
+    min-height: 280px;
+    background: linear-gradient(135deg, #071b3a, #1d4b80);
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.apropos-image h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.apropos-image p {
+    line-height: 1.7;
+    color: #f5b400;
+}
+
+/* SECTION AVANTAGES */
+#avantages {
+    background-color: #eaf0f7;
+}
+
+.avantages-intro {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.avantages-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.avantage {
+    background-color: white;
+    width: 250px;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.avantage:hover {
+    transform: translateY(-6px);
+}
+
+.avantage h3 {
+    color: #102e59;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.avantage p {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* PIED DE PAGE PROFESSIONNEL */
+footer {
+    background-color: #071b3a;
+    color: white;
+    padding: 50px 25px 20px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.footer-colonne {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 200px;
+}
+
+.footer-colonne h2 {
+    color: #f5b400;
+    font-size: 22px;
+}
+
+.footer-colonne h3 {
+    color: #f5b400;
+}
+
+.footer-colonne p {
+    line-height: 1.7;
+}
+
+.footer-colonne a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-colonne a:hover {
+    color: #f5b400;
+}
+
+.footer-bas {
+    text-align: center;
+    border-top: 1px solid #40516b;
+    margin-top: 35px;
+    padding-top: 20px;
+}
+/* LOGO DE L'ENTREPRISE */
+.logo img {
+    width: 120px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+#accueil img {
+    width: 60%;
+    max-width: 350px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+/* GALERIE */
+.galerie-container {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.galerie-container img {
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.galerie-container img:hover {
+    transform: scale(1.04);
+}
+
+/* DEFILEMENT FLUIDE */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ESPACEMENT DES SECTIONS */
+section {
+    scroll-margin-top: 20px;
+}
